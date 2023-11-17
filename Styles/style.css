@@ -6,7 +6,6 @@ body {
   .navContainer {
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid red; */
     margin: 20px 30px;
   }
   .navBer{
@@ -23,13 +22,13 @@ body {
   }
   .order{
     background-image: url(./images/slider2.jpg);
-      width: 70vw;
-      height: 70vh;
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: 0.7;
-      margin: 40px auto;
-      justify-content: center;
+    width: 70vw;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    margin: 40px auto;
+    justify-content: center;
     }
 .orderbox{
   text-align: center;
@@ -37,12 +36,10 @@ body {
   color: rgb(17, 17, 17);
   text-decoration: none;
   padding: 100px 20px;
-  /* border: 1px solid red; */
 }
 .container{
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 .Boxs img{
   height: 50vh;
@@ -50,11 +47,9 @@ body {
 }
 .boxorder{
   margin:  50px 30px;
-  /* border: 1px solid green; */
   font-size: 20px;
 }
 .cekbox{
-  /* border: 1px solid red; */
   width: 30vw;
   height: 60vh;
   margin:80px ;
@@ -63,12 +58,9 @@ body {
   display: flex;
   text-align: center;
   margin:60px 10px ;
-  /* margin: 80px 20px; */
   justify-content: space-around;
-  /* border: 1px solid green; */
 }
 .borderbox{
-  /* border: 1px solid red; */
   width: 30vw;
   height:  75vh;
   background-color: rgb(77, 121, 241);
@@ -93,7 +85,6 @@ body {
 }
 .card{
   box-shadow: 5px  4px 5px rgb(136, 132, 132);
-  /* border: 1px solid green; */
   text-align: center;
   width: 30vw;
   height: 50vh;
@@ -106,23 +97,46 @@ body {
   border-radius: 50%; 
 }
 .cardContainer{
-   
-  display: grid;
+  display: flex;
   width: 60vw;
-  grid-template-columns: auto auto auto;
+  margin: auto;
     
 }
 .box2{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  /* border: 1px solid green; */
+  padding: 50px 30px;
 }
 .box3{
-  border: 1px solid red;
-  width: 30vw;
+  /* border: 1px solid red; */
+  width: 40vw;
+  height: 60vh;
+  font-size: 20px;
+  
+}
+.box4 img{
+  /* border: 1px solid red; */
+  width:25vw;
+  margin: 90px 20px;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid green;
+  width: 80vw;
+  margin: auto;
+  height: 40vh;
+  color: white;
+  background-color: black;
+}
+.box{
+  margin: 40px 20px;
+  padding: 50px 40px;
 }
 
-@media screen and (max-width:768px) {
 
+@media screen and (max-width:768px) {
   .orderbox{
     font-size: 10px;
     width: 60vw;
@@ -130,7 +144,6 @@ body {
     color: rgb(17, 17, 17);
     text-decoration: none;
     padding: 100px 20px;
-  
   }
   .container{
     flex-direction: column;
@@ -159,4 +172,37 @@ body {
     margin: auto;
   
   }
+  
+.cardContainer{
+    flex-direction: column;
+    margin: auto;
+    width: 30vw;
+  }
+  .card{
+    width: 50vw;
+    height: 50vh;
+  }
+  
+  .box2{
+    flex-direction:column ;
+    display: flex;
+  }
+
+  .box3{
+    width: 60vw;
+    height: 75vh;
+    
+  }
+  .box4 img{
+    width:50vw;
+    margin: 40px 20px;
+  }
+  .footer{
+    width: 80vw;
+    height: 60vh;
+  }
+  .box{
+    width: 80vw;
+  }
+  
 }
